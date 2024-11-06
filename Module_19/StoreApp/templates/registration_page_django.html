@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма Django</title>
+</head>
+<body>
+      {{ error }}
+      <form method="post" action="">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Зарегистрироваться</button>
+
+    {% if name %}
+      <br>Приветствуем, {{name}}!{% endif %}
+  </form>
+</body>
+</html>

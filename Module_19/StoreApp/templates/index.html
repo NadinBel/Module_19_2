@@ -1,0 +1,9 @@
+{% extends './menu.html'%}
+  {% block pagename %}<h1>{{ pagename }}</h1>{% endblock %}
+  {% block menu %}{{ block.super }}{% endblock %}
+  <main>
+  {% block content %}<h3>Мы продаем игры 50 лет!</h3>{% endblock %}
+  {% block btn %}{{ block.super }}{% endblock %}
+  </main>
+</body>
+</html>
